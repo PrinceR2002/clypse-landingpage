@@ -19,7 +19,7 @@ All notable changes to Clypse will be documented in this file.
 **🎤 Instant Audio Recognition**
 - Record audio from any TV show or movie
 - Get instant identification results in seconds
-- Works with dialogue, music, and sound effects
+- Works with dialogue
 
 **📱 Beautiful iOS Experience**
 - Modern, intuitive interface designed for iOS
@@ -28,7 +28,6 @@ All notable changes to Clypse will be documented in this file.
 - Optimized for all iPhone models
 
 **🎬 Comprehensive Content Database**
-- Thousands of TV shows and movies
 - Detailed episode information
 - Genre classifications and descriptions
 - Growing weekly with new content
@@ -59,7 +58,7 @@ All notable changes to Clypse will be documented in this file.
 
 ### 🎯 Supported Content
 
-- **TV Shows**: All major series and episodes
+- **TV Shows**: series and episodes
 - **Movies**: Theatrical and streaming releases
 - **Quotes**: Famous dialogue and memorable lines
 - **Music**: Theme songs and soundtracks
