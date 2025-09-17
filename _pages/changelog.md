@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Changelog
+title: What's New
 include_in_header: true
 ---
 
