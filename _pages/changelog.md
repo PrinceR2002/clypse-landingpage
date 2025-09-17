@@ -1,65 +1,119 @@
 ---
 layout: page
-title: What's New
+title: Changelog
 include_in_header: true
 ---
 
 # Changelog
-Here you can keep a changelog for your app. Edit the markdown based CHANGELOG.md which is located in the _pages directory. The changelog below is simply an example changelog that serves to exemplify how the markdown can be used. You can be as creative as you want with the markdown.
 
-<br>
+All notable changes to Clypse will be documented in this file.
 
-### `Latest`
-# **Version 2.0**
-This is the first update to our app. Jeez **goodness** by kept more sensually a much far proper exotically precise [here is a link](https://www.google.com) and and illicit hey uninspiring the more sat honey knelt before before bearish bowed lorikeet wolf grandly instead diligently and rhinoceros imperative.
+## [1.0.0] - January 17, 2025
 
-#### What's New
-- Much far proper exotically precise unaccountable.
-- [Changes to Privacy Policy](/privacypolicy)
+### 🎉 Initial Release
 
-#### Bug Fixes
-- Much far proper exotically precise unaccountable.
-- [Changes to Privacy Policy](/privacypolicy)
+**Clypse** is now available on the App Store! This revolutionary app transforms how you discover and explore your favorite TV shows and movies.
 
-<br>
+### ✨ What's New
 
-### **Version 2.1**
-Abnormal and formidable against much the before well improper more spent far heron amicably iguana plainly swanky upon mammoth **much paid darn some tapir** some glared save crud more regarding one accommodating gosh cannily and on hungry a more goodness inside merry yikes wedded versus because some a a a shined anteater goldfinch jeez up so and this this a.
+**🎤 Instant Audio Recognition**
+- Record audio from any TV show or movie
+- Get instant identification results in seconds
+- Works with dialogue, music, and sound effects
 
-#### What's New
-- Much far proper exotically precise unaccountable.
-- Much far proper exotically precise unaccountable.
+**📱 Beautiful iOS Experience**
+- Modern, intuitive interface designed for iOS
+- Smooth animations and transitions
+- Dark mode support
+- Optimized for all iPhone models
 
-<br>
+**🎬 Comprehensive Content Database**
+- Thousands of TV shows and movies
+- Detailed episode information
+- Genre classifications and descriptions
+- Growing weekly with new content
 
-________
-<br>
+**💾 Personal Clip Library**
+- Save your favorite recognized moments
+- Organize clips by show or movie
+- Timeline progress visualization
+- Offline access to saved content
 
-### `Initial Release`
-# **Version 1.0**
-Cracked a more and iguana a without some echidna a abnormal hello and beat thanks jeepers gnu jeepers until up depending for drooled awfully angelfish relentless much a well wasp some in impala darn and overate greedily wow kookaburra beneath much wistful fluid until and lemming less armadillo redoubtable after much capybara wow that hence interbred timorous loosely oh divisively wherever because jeepers until since as that goodness roadrunner insanely belated physic jeepers hey jeepers much the beside steadfastly up toward indubitably this goodness playful.
+**🔗 Streaming Integration**
+- Direct links to watch on your favorite platforms
+- Netflix, Hulu, Disney+, Amazon Prime, and more
+- Platform availability for each title
+- One-tap access to content
 
-<br>
+**💬 Quote Recognition**
+- Identify famous quotes and dialogue
+- Perfect for sharing memorable moments
+- Works with iconic lines from popular shows
 
-## **Version 1.1**
-Abnormal and formidable against much the before well improper more spent far heron amicably iguana plainly swanky upon mammoth **much paid darn some tapir** some glared save crud more regarding one accommodating gosh cannily and on hungry a more goodness inside merry yikes wedded versus because some a a a shined anteater goldfinch jeez up so and this this a.
+### 🛡️ Privacy & Security
 
-#### What's New
-- Much far proper exotically precise unaccountable.
-- Much far proper exotically precise unaccountable.
+- **No Account Required**: Use immediately without signing up
+- **Local Storage**: Your clips are stored securely on your device
+- **Encrypted Communication**: All data transmission is secure
+- **No Personal Data Collection**: We don't collect personal information
 
-<br>
+### 🎯 Supported Content
 
-## Version 1.0.1
-That wow robin one and gosh audibly darn that variously less across softly awakened under affectingly wildebeest from jeepers far contemplated and indisputably clung jeepers much mistaken some after mumbled hey certain neatly far alas more trod the swelled rolled permissively so save pert the tapir paradoxical off so then juggled crud a however overslept vehemently kept indisputably anteater walked alas or into.
+- **TV Shows**: All major series and episodes
+- **Movies**: Theatrical and streaming releases
+- **Quotes**: Famous dialogue and memorable lines
+- **Music**: Theme songs and soundtracks
 
-#### What's New
-- Much far proper exotically precise unaccountable.
-- Much far proper exotically precise unaccountable.
-- Much far proper exotically precise unaccountable.
+### 🔧 Technical Features
 
-#### Bug Fixes
-- Improved user sign up experience.
-- Unlike deliberately zebra hen oh jeez understandable. Alas and quit oh snooty unlike deliberately.
+- Advanced AI-powered recognition
+- Real-time audio processing
+- Offline functionality for saved clips
+- Rate limiting for fair usage
+- Comprehensive error handling
 
-<br>
+---
+
+## 🚀 Coming Soon
+
+We're constantly working to improve Clypse. Upcoming features include:
+
+- **Enhanced Recognition**: Even more accurate identification
+- **More Content**: Expanded database with additional shows and movies
+- **Social Features**: Share clips with friends
+- **Advanced Search**: Find content by actor, director, or genre
+- **Widgets**: Quick access from your home screen
+- **Apple Watch**: Control recording from your wrist
+
+---
+
+## 📱 How to Update
+
+Updates are automatically delivered through the App Store. Make sure you have automatic updates enabled or check the App Store regularly for new versions.
+
+**To enable automatic updates:**
+1. Open Settings on your iPhone
+2. Tap App Store
+3. Turn on "App Updates"
+
+---
+
+## 🆘 Support & Feedback
+
+We'd love to hear from you! If you have any questions, suggestions, or encounter issues:
+
+- **Email**: support@clypse.app
+- **In-App Help**: Use the Help section in Settings
+- **Request Content**: Use "Request a Title" for unrecognized content
+
+---
+
+## 📄 Legal
+
+- **Privacy Policy**: Available in the app and on our website
+- **Terms of Service**: Please review before using
+- **App Store**: Download from the official App Store only
+
+---
+
+*Thank you for choosing Clypse! We're excited to help you discover and explore your favorite content.*
