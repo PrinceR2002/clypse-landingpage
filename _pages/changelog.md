@@ -8,13 +8,22 @@ include_in_header: true
 
 All notable changes to Clypse will be documented in this file.
 
+## [1.1.0] - February 2025
+
+### 🎮 The Gameplay Update
+Clypse is now more than just recognition—it's about play. We've added daily games to test your movie knowledge.
+
+* **Quotele**: Guess the show or movie from a single line of dialogue.
+* **Framed**: Identify the film from a single frame.
+* **Daily Streaks**: Track your recognition prowess over time.
+
 ## [1.0.0] - January 17, 2025
 
 ### 🎉 Initial Release
 
-**Clypse** is now available on the App Store! This revolutionary app transforms how you discover and explore your favorite TV shows and movies.
+**Clypse** is now available on the App Store! The future of all media recognition starts here.
 
-### ✨ What's New
+### ✨ Core Features
 
 **🎤 Instant Audio Recognition**
 - Record audio from any TV show or movie
@@ -115,4 +124,4 @@ We'd love to hear from you! If you have any questions, suggestions, or encounter
 
 ---
 
-*Thank you for choosing Clypse! We're excited to help you discover and explore your favorite content.*
+*Clypse: Recognize any scene. Anytime. Anywhere.*

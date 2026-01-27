@@ -1,26 +1,71 @@
 <div class="features">
 
-    {% for feature in site.features %}
-
-    {% if feature.title %}
     <div class="feature">
         <div>
             <span class="fa-stack fa-1x">
                 <i class="iconBack fas fa-circle fa-stack-2x"></i>
-                <i class="iconTop fas fa-{{ feature.fontawesome_icon_name }} fa-stack-1x"></i>
+                <i class="iconTop fas fa-microphone fa-stack-1x"></i>
             </span>
         </div>
         <div class="featureText">
             <h3>
-                {{ feature.title }}
+                Instant Scene Recognition
             </h3>
             <p>
-                {{ feature.description }}
+                Recognize any movie or show from background audio or by simply speaking a quote.
             </p>
         </div>
     </div>
-    {% endif %}
 
-    {% endfor %}
+    <div class="feature">
+        <div>
+            <span class="fa-stack fa-1x">
+                <i class="iconBack fas fa-circle fa-stack-2x"></i>
+                <i class="iconTop fas fa-gamepad fa-stack-1x"></i>
+            </span>
+        </div>
+        <div class="featureText">
+            <h3>
+                Daily Puzzles
+            </h3>
+            <p>
+                Play <strong>Quotele</strong> to guess the movie from a line, or <strong>Framed</strong> to identify it from a single frame.
+            </p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div>
+            <span class="fa-stack fa-1x">
+                <i class="iconBack fas fa-circle fa-stack-2x"></i>
+                <i class="iconTop fas fa-database fa-stack-1x"></i>
+            </span>
+        </div>
+        <div class="featureText">
+            <h3>
+                Deep Context
+            </h3>
+            <p>
+                Get the exact scene timestamp, full cast lists, and direct links to watch on your streaming services.
+            </p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div>
+            <span class="fa-stack fa-1x">
+                <i class="iconBack fas fa-circle fa-stack-2x"></i>
+                <i class="iconTop fas fa-bookmark fa-stack-1x"></i>
+            </span>
+        </div>
+        <div class="featureText">
+            <h3>
+                Your Library
+            </h3>
+            <p>
+                Save your favorite quotes and moments. Build a personal collection of the scenes that matter to you.
+            </p>
+        </div>
+    </div>
 
 </div>

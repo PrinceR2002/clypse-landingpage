@@ -14,7 +14,9 @@ app_icon                                  :  assets/appicon.png                 
 site_icon                                 :  assets/siteicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  :  Clypse                                         # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 :  Free                                        # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Say it, hear it, or play it — we’ll tell you where it’s from.
+
+# UPDATED DESCRIPTION TO MATCH NEW VISION
+app_description                           : The Future of All Media Recognition. Recognize any scene. Anytime. Anywhere.
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
@@ -65,18 +67,6 @@ social_icons_foreground_color             : "#666666"
 social_icons_background_color             : "#e6e6e6"
 
 footer_text_color                         : "#666666"
-
-
-
-
-
-
-
-
-
-
-
-
 
 ####################################################
 ### Jekyll Configuration. No need to touch this. ###
