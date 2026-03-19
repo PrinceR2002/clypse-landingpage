@@ -15,8 +15,12 @@ $(function() {
             console.info("Image strings loaded from Apple API.");
             var appInfo = json.results[0];
 
-            // Set favicon
-            $('link[rel="shortcut icon"]').attr("href", appInfo.artworkUrl512);
+            // Set favicon from Apple only if the page didn't already specify one.
+            // This repo sets the favicon via `_config.yml` + `_includes/head.html`.
+            var $favicon = $('link[rel="shortcut icon"]');
+            if ($favicon.length && (!$favicon.attr('href') || $.trim($favicon.attr('href')).length === 0)) {
+                $favicon.attr("href", appInfo.artworkUrl512);
+            }
 
             // Set page title using the iOS app ID if it is not set manually in _config.yml
             var $pageTitle = $(".pageTitle");

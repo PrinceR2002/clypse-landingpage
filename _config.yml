@@ -1,5 +1,5 @@
 #page title
-page_title                                : Clypse                              # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title                                : Clypse | Identify Any Movie, Show, Actor, or Quote
 
 # App Info
 ios_app_id                                : 6752645514                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
@@ -15,8 +15,7 @@ site_icon                                 :  assets/siteicon.png                
 app_name                                  :  Clypse                                         # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 :  Free                                        # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 
-# UPDATED DESCRIPTION TO MATCH NEW VISION
-app_description                           : The Future of All Media Detection. Recognize any scene. Anytime. Anywhere.
+app_description                           : Identify any movie, show, actor, or quote from a clip, screenshot, spoken line, or live audio with Clypse.
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
@@ -26,7 +25,7 @@ enable_smart_app_banner                   : true                                
 your_name                                 : Prince Rwamatwara                            
 your_link                                 :                      
 your_city                                 : Phoenix                                
-email_address                             : princeyannick.pr@gmail.com
+email_address                             : contact@clypseapp.com
 linkedin_username                         : princeyannick                                     
 linkedin_company                          :                                           
 facebook_username                         :                                           
@@ -51,7 +50,7 @@ device_color                              : black                               
 
 body_background_color                     : "#ffffff"
 
-link_color                                : "#1d63ea"
+link_color                                : "#4970ef"
 
 app_title_color                           : "#ffffff"
 app_price_color                           : "#ffffff"

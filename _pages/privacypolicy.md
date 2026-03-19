@@ -79,7 +79,7 @@ We may update this Privacy Policy from time to time. We will notify you of any c
 ## Contact Us
 
 If you have any questions about this Privacy Policy, please contact us at:
-- Email: support@clypse.app
+- Email: support@clypseapp.com
 - Website: [Landing Page](https://princer2002.github.io/clypse-landingpage/)
 
 ## Compliance

@@ -8,13 +8,14 @@
 {% include head.html %}
 
 <body class="subPageBody">
-    <div class="headerBackground subPageHeaderBackground">
-        <div class="container subPageContainer">
+    <div class="page-chrome page-chrome--subpage">
         {% include header.html %}
+        <main class="page-content-shell">
             <article class="page markdown-body">
                 {{ content }}
             </article>
-        </div>
+        </main>
+        {% include footer.html %}
         {% include appstoreimages.html %}
     </div>
 </body>

@@ -3,64 +3,199 @@
 
 {% include head.html %}
 
-<body>
-    <div class="imageWrapper">
-            <div class="headerBackground">
-                <div class="container">
-                    {% include header.html %}
-                    <div class="iphonePreview">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 0 0" style="position: absolute;">
-                            <clipPath id="screenMask" clipPathUnits="objectBoundingBox" transform="scale(0.00257, 0.00119)">
-                                <path d="M6490.24,1234.36H6216.28c-2.57,0-10.55-.07-12.07-0.07a87.524,87.524,0,0,1-12-1.03,40.051,40.051,0,0,1-11.4-3.79,38.315,38.315,0,0,1-16.82-16.84,39.948,39.948,0,0,1-3.78-11.42,72.257,72.257,0,0,1-1.04-12.02c-0.06-1.83-.06-5.56-0.06-5.56V452.125h0s0.06-11.391.06-12.086a87.9,87.9,0,0,1,1.04-12.025,39.843,39.843,0,0,1,3.78-11.413,38.283,38.283,0,0,1,16.82-16.847,39.762,39.762,0,0,1,11.4-3.785,71.909,71.909,0,0,1,12-1.037c16.99-.567,36.32-0.061,34.51-0.061,5.02,0,6.5,3.439,6.63,6.962a35.611,35.611,0,0,0,1.2,8.156,21.326,21.326,0,0,0,19.18,15.592c2.28,0.192,6.78.355,6.78,0.355H6433.7s4.5-.059,6.79-0.251a21.348,21.348,0,0,0,19.18-15.591,35.582,35.582,0,0,0,1.19-8.154c0.13-3.523,1.61-6.962,6.64-6.962-1.81,0,17.52-.5,34.5.061a71.923,71.923,0,0,1,12.01,1.038,39.832,39.832,0,0,1,11.4,3.784,38.283,38.283,0,0,1,16.82,16.844,40.153,40.153,0,0,1,3.78,11.413,87.844,87.844,0,0,1,1.03,12.023c0,0.695.06,12.084,0.06,12.084h0V1183.64s0,3.72-.06,5.55a72.366,72.366,0,0,1-1.03,12.03,40.2,40.2,0,0,1-3.78,11.41,38.315,38.315,0,0,1-16.82,16.84,40.155,40.155,0,0,1-11.4,3.79,87.669,87.669,0,0,1-12.01,1.03c-1.52,0-9.5.07-12.07,0.07" transform="translate(-6159.12 -394.656)"/>
-                            </clipPath>
-                        </svg>
+{% assign screenshot = site.static_files | where_exp: "file", "file.path contains 'assets/screenshot/'" | first %}
 
-                        <div class="videoContainer hidden">
-                            <video class="screenvideo" autoplay="autoplay" controls="controls">
-                            </video>
-                        </div>  
-                        
-                        <img class="iphoneScreen hidden" src="" alt="">
+<body class="landing-body">
+    <div class="page-chrome">
+        {% include header.html %}
 
-                        {% include screencontent.html %}
-
+        <main class="landing-page">
+            <section class="hero section-shell" id="top">
+                <div class="hero-copy">
+                    <p class="eyebrow">The Shazam for Movies/TV</p>
+                    <h1 class="hero-title">Hear it. Quote it. Record it. Clypse finds the exact scene.</h1>
+                    <p class="hero-lead">
+                        Use your surrounding audio, a screen recording, or a spoken quote to identify the movie
+                        or show instantly, then keep the match with timestamps, year, providers, and saved moments.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button--primary appStoreLink" href="{{ site.appstore_link }}">Download for iPhone</a>
+                        <a class="button button--secondary" href="#how-it-works" target="_self">See how it works</a>
                     </div>
-                    <div class="appInfo">
-                        <div class="appIconShadow">
-                           <svg width="0" height="0">
-                                <defs>
-                                    <clipPath id="shape120">
-                                        <path id="shape" class="cls-1" d="M6821,495.533v-4.281c0-1.2-.04-2.4-0.04-3.642a57.7,57.7,0,0,0-.68-7.882,26.144,26.144,0,0,0-2.48-7.483,25.115,25.115,0,0,0-11.04-11.044,26.118,26.118,0,0,0-7.49-2.481,47.28,47.28,0,0,0-7.88-.68c-1.2-.04-2.4-0.04-3.64-0.04h-53.5c-1.2,0-2.4.04-3.64,0.04a57.813,57.813,0,0,0-7.88.68,26.323,26.323,0,0,0-7.49,2.481,25.115,25.115,0,0,0-11.04,11.044,26.144,26.144,0,0,0-2.48,7.483,47.313,47.313,0,0,0-.68,7.882c-0.04,1.2-.04,2.4-0.04,3.642v53.5c0,1.2.04,2.4,0.04,3.641a57.7,57.7,0,0,0,.68,7.883,26.137,26.137,0,0,0,2.48,7.482,25.115,25.115,0,0,0,11.04,11.044,26.261,26.261,0,0,0,7.49,2.481,47.28,47.28,0,0,0,7.88.68c1.2,0.04,2.4.04,3.64,0.04h53.5c1.2,0,2.4-.04,3.64-0.04a57.654,57.654,0,0,0,7.88-.68,26.057,26.057,0,0,0,7.49-2.481,25.115,25.115,0,0,0,11.04-11.044,26.137,26.137,0,0,0,2.48-7.482,47.316,47.316,0,0,0,.68-7.883c0.04-1.2.04-2.4,0.04-3.641V495.533h0Z" transform="translate(-6701 -458)" filter="url(#f1)"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <img class="appIconLarge" src="{{ site.app_icon | relative_url }}">
-                        </div>
-                        <div class="appNamePriceContainer">
-                            <h1 class="appName">
-                                {{ site.app_name }}
-                            </h1>
-                            <h2 class="appPrice">
-                                {{ site.app_price }}
-                            </h2>
-                        </div>
-                        <div class="appDescriptionContainer">
-                            <p class ="appDescription">
-                                The Future of All Media Detection. Recognize any scene. Anytime. Anywhere.
-                            </p>
-                        </div>
-                        <div class="downloadButtonsContainer">
-                            {% if site.playstore_link %}
-                                <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png"></a>
-                            {% endif %}
-                            <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
-                        </div>
-                    </div>
-                    {% include features.html %}
-                    {% include footer.html %}
-                    {% include appstoreimages.html %}
+                    <p class="hero-note">
+                        Clypse's database is still growing, so it will not recognize every title yet. New titles and matches are added every week.
+                    </p>
                 </div>
-            </div>
-        </div>
+
+                <div class="hero-stage">
+                    <div class="stage-orb stage-orb--mint"></div>
+                    <div class="stage-orb stage-orb--coral"></div>
+                    <div class="stage-grid"></div>
+
+                    
+
+                    <img class="phone-showcase" src="{{ 'assets/iPhone 17.png' | replace: ' ', '%20' | relative_url }}" alt="{{ site.app_name }} app preview on iPhone">
+
+                
+                </div>
+            </section>
+
+            <section class="signal-strip section-shell">
+                <p>
+                    Built for the exact “what scene is this?” moment across living-room audio, spoken quotes,
+                    and what is currently playing on your screen.
+                </p>
+            </section>
+
+            <section class="section-shell section-intro" id="features">
+                <div class="section-heading">
+                    <p class="eyebrow">What makes it useful</p>
+                    <h2>Recognition is fast, but the answer is deeper than just a title.</h2>
+                    <p>
+                        Clypse is not just for naming a scene. It is built to help you keep it, understand it,
+                        and come back to it later.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card feature-card--highlight">
+                        <span class="feature-icon"><i class="fas fa-microphone-alt"></i></span>
+                        <h3>Three clean ways to recognize</h3>
+                        <p>Use the mic around you, record what is on your screen, or speak the quote directly.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="feature-icon"><i class="fas fa-info-circle"></i></span>
+                        <h3>Deep metadata on every match</h3>
+                        <p>See timestamps, year, genres, ratings, and streaming providers right after recognition.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="feature-icon"><i class="fas fa-save"></i></span>
+                        <h3>Save clips and quotes</h3>
+                        <p>Keep recognized scenes and memorable lines so the best finds do not disappear after one tap.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="feature-icon"><i class="fas fa-puzzle-piece"></i></span>
+                        <h3>Daily movie games built in</h3>
+                        <p>Jump into Framed and Quotele for a repeatable puzzle loop that fits the rest of the product.</p>
+                    </article>
+                </div>
+                <p class="section-footnote">
+                    Coverage is improving continuously. The database grows every week, which means recognition gets broader over time.
+                </p>
+            </section>
+
+            <section class="section-shell modes-section" id="modes">
+                <div class="section-heading">
+                    <p class="eyebrow">Recognition modes</p>
+                    <h2>Three ways in. Each one built for a real habit.</h2>
+                </div>
+
+                <div class="modes-grid">
+                    <article class="mode-card">
+                        <span class="mode-number">01</span>
+                        <h3>Around You</h3>
+                        <p>Point your phone at a TV, laptop, or speaker and let the mic identify the scene around you.</p>
+                    </article>
+
+                    <article class="mode-card">
+                        <span class="mode-number">02</span>
+                        <h3>On Your Screen</h3>
+                        <p>Start screen recording, switch to the app where the media is playing, and let Clypse resolve it.</p>
+                    </article>
+
+                    <article class="mode-card">
+                        <span class="mode-number">03</span>
+                        <h3>Say a Quote</h3>
+                        <p>Recite the line you remember into the mic and work backwards to the movie or show instantly.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-shell process-section" id="how-it-works">
+                <div class="section-heading section-heading--light">
+                    <p class="eyebrow">How it works</p>
+                    <h2>The recognition loop is clean, fast, and obvious.</h2>
+                </div>
+
+                <div class="process-grid">
+                    <article class="process-card">
+                        <span class="process-step">Step 1</span>
+                        <h3>Start from any fragment</h3>
+                        <p>Audio, quote, or clip. Whatever sparked the question is enough to begin.</p>
+                    </article>
+
+                    <article class="process-card">
+                        <span class="process-step">Step 2</span>
+                        <h3>Clypse resolves the scene</h3>
+                        <p>The engine maps what you captured to the title, the people involved, and the moment itself.</p>
+                    </article>
+
+                    <article class="process-card">
+                        <span class="process-step">Step 3</span>
+                        <h3>You move forward immediately</h3>
+                        <p>Save it, share it, jump to cast details, or find where to watch next without losing momentum.</p>
+                    </article>
+                </div>
+            </section>
+
+
+
+            <section class="section-shell faq-section" id="faq">
+                <div class="section-heading">
+                    <p class="eyebrow">FAQ</p>
+                    <h2>Clear answers for the first-time visitor.</h2>
+                </div>
+
+                <div class="faq-grid">
+                    <details class="faq-card">
+                        <summary>What can Clypse identify?</summary>
+                        <p>Clypse currently supports a growing set of movies and TV shows through surrounding audio, screen recordings, and spoken quotes, but it does not cover every title yet.</p>
+                    </details>
+
+                    <details class="faq-card">
+                        <summary>Does it support every movie and show?</summary>
+                        <p>No. The database is still expanding, and new titles are added every week, so coverage improves over time.</p>
+                    </details>
+
+                    <details class="faq-card">
+                        <summary>What happens after a match?</summary>
+                        <p>You get useful metadata like timestamp, year, ratings, genres, and providers, plus the option to save clips or quotes.</p>
+                    </details>
+
+                    <details class="faq-card">
+                        <summary>What if Clypse cannot identify something yet?</summary>
+                        <p>That usually means the title is not in the current database yet. Coverage is actively growing every week as more titles are added.</p>
+                    </details>
+
+                    <details class="faq-card">
+                        <summary>Is there more than recognition?</summary>
+                        <p>Yes. Clypse also lets you save recognized clips and quotes, review metadata, and play Framed and Quotele.</p>
+                    </details>
+                </div>
+            </section>
+
+            <section class="section-shell cta-section" id="download">
+                <p class="eyebrow">Ready to launch</p>
+                <h2>Give Clypse a landing page that matches the product it is becoming.</h2>
+                <p>
+                    Sharper positioning, cleaner feature hierarchy, and a visual system built around the real product:
+                    recognition, saved moments, deep metadata, and daily puzzle play.
+                </p>
+                <div class="hero-actions hero-actions--center">
+                    <a class="button button--primary appStoreLink" href="{{ site.appstore_link }}">Get Clypse on the App Store</a>
+                    {% if site.playstore_link %}
+                        <a class="button button--secondary" href="{{ site.playstore_link }}">Google Play</a>
+                    {% endif %}
+                </div>
+            </section>
+        </main>
+
+        {% include footer.html %}
+        {% include appstoreimages.html %}
+    </div>
 </body>
+
 </html>
