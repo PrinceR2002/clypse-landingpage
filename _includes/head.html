@@ -9,15 +9,79 @@
 	<meta name="theme-color" content="#4970ef">
 
 	<link rel="shortcut icon" href="{{ site.site_icon | relative_url }}">
+	<link rel="apple-touch-icon" href="{{ site.site_icon | relative_url }}">
+
+	<!-- Social cards -->
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="{{ site.app_name }}">
+	<meta property="og:title" content="{{ site.page_title }}">
+	<meta property="og:description" content="{{ site.app_description }}">
+	<meta property="og:image" content="{{ site.hero_image | relative_url | absolute_url }}">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="{{ site.page_title }}">
+	<meta name="twitter:description" content="{{ site.app_description }}">
+	<meta name="twitter:image" content="{{ site.hero_image | relative_url | absolute_url }}">
+	{% if site.twitter_username %}<meta name="twitter:site" content="@{{ site.twitter_username }}">{% endif %}
 
 	<!-- Smart App Banner -->
 	{% if site.enable_smart_app_banner %}
 		<meta name="apple-itunes-app" content="app-id={{ site.ios_app_id }}">
 	{% endif %}
 
+	<!--
+		Image preloading.
+		Everything the first screen paints is fetched before the page renders, so
+		nothing pops in after the layout settles. The hero render is the LCP element
+		and gets the highest priority; the rest are warmed in the background.
+	-->
+	<link rel="preload" as="image" href="{{ site.site_icon | relative_url }}" fetchpriority="high">
+	{% if page.url == '/' %}
+		<link rel="preload" as="image" href="{{ site.hero_image | relative_url }}" fetchpriority="high">
+		<link rel="prefetch" as="image" href="{{ site.showcase_image | relative_url }}">
+	{% endif %}
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ '/main.css' | relative_url }}">
+
+	<!--
+		Image warming.
+		The <link rel="preload"> tags above are what actually stop images arriving
+		after the page has painted; this only warms everything further down so a
+		scroll never hits an undecoded image. Nothing here gates rendering, so a
+		slow network or a JS failure can never leave the page blank.
+	-->
+	<script>
+		(function () {
+			var warm = [
+				{{ site.site_icon | relative_url | jsonify }}{% if page.url == '/' %},
+				{{ site.hero_image | relative_url | jsonify }},
+				{{ site.showcase_image | relative_url | jsonify }}{% endif %}
+			];
+
+			function preload() {
+				warm.forEach(function (src) {
+					if (!src) { return; }
+					var img = new Image();
+					img.decoding = 'async';
+					img.src = src;
+				});
+
+				// Anything added to the page later (lazy <img>) gets warmed too.
+				var imgs = document.images;
+				for (var i = 0; i < imgs.length; i++) {
+					if (!imgs[i].complete) {
+						var w = new Image();
+						w.src = imgs[i].currentSrc || imgs[i].src;
+					}
+				}
+			}
+
+			if (document.readyState === 'complete') { preload(); }
+			else { window.addEventListener('load', preload); }
+		})();
+	</script>
 </head>

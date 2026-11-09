@@ -756,6 +756,7 @@
 	}
 
 	.feature-grid,
+	.feature-grid--trio,
 	.modes-grid {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
@@ -846,8 +847,14 @@
 	}
 
 	.feature-grid,
+	.feature-grid--trio,
 	.modes-grid {
 		grid-template-columns: 1fr;
+	}
+
+	.showcase-shot {
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.signal-strip p {
@@ -857,4 +864,28 @@
 	.showcase-copy {
 		padding-right: 0;
 	}
+}
+
+/* --- Added for the refreshed landing content --- */
+
+.feature-grid--trio {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.showcase-shot {
+	display: block;
+	width: 100%;
+	max-width: 26rem;
+	height: auto;
+	margin-top: 2.6rem;
+	border-radius: 2.8rem;
+	box-shadow: 0 24px 60px rgba(73, 112, 239, 0.22);
+	background: rgba(255, 255, 255, 0.6);
+}
+
+/* Reserve the hero image's box before it paints, so nothing shifts. */
+.phone-showcase,
+.showcase-shot,
+.headerIcon {
+	height: auto;
 }
