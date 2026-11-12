@@ -5,7 +5,7 @@ include_in_header: false
 ---
 
 **Last updated**  
-November 7, 2026
+November 11, 2026
 
 # Privacy Policy
 
@@ -48,9 +48,8 @@ We store your puzzle attempts, guesses, scores, streaks and archive history so y
 - You can use Clypse without an account.
 - If you sign in with Apple, we store:
   - Apple's identifier for your account
-  - the name you share
-  - the email you choose to share (Apple can replace it with a private relay address)
   - which of your devices are signed in, recorded as one-way hashes of their identifiers
+- We don't ask Apple for your name or email. Accounts created before November 11, 2026 may also hold the name and email shared then; deleting your account removes them.
 - While you're signed in, your saved clips (including the matched transcript) and saved quotes are stored on our servers so they sync to your other devices. Free accounts back up 50 clips and 50 quotes; Clypse+ backs up 2,000.
 - Deleting a clip or quote removes its content from our servers on the next sync.
 - Signing out stops syncing, and you choose whether to keep a copy on that phone.
