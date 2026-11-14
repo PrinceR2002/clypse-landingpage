@@ -11,7 +11,7 @@ November 7, 2026
 
 ## 1. Acceptance of Terms
 
-By using Clypse, you agree to these Terms of Service and our [Privacy Policy](/privacypolicy/). If you don't agree, please don't use the app.
+These terms are an agreement between you and Clypse LLC ("Clypse," "we" or "us"). By using Clypse, you agree to these Terms of Service and our [Privacy Policy](/privacypolicy/). If you don't agree, please don't use the app.
 
 ## 2. The Service
 
@@ -85,7 +85,7 @@ Clypse is provided "as is" without warranties of any kind. To the extent the law
 
 ## 14. Apple
 
-These terms are between you and Clypse, not Apple. Your use of the app is also subject to Apple's Licensed Application End User License Agreement (Standard EULA) and the App Store's terms.
+These terms are between you and Clypse LLC, not Apple. Your use of the app is also subject to Apple's Licensed Application End User License Agreement (Standard EULA) and the App Store's terms.
 
 ## 15. Changes to These Terms
 

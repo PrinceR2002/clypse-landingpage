@@ -9,7 +9,7 @@ November 11, 2026
 
 # Privacy Policy
 
-Clypse is built to work without an account, without ads, and without tracking you across other apps. This policy explains what we collect, why, who helps us process it, and how long we keep it.
+Clypse is operated by Clypse LLC ("Clypse," "we," "our" or "us"). It is built to work without an account, without ads, and without tracking you across other apps. This policy explains what we collect, why, who helps us process it, and how long we keep it.
 
 ## Audio and Transcripts
 
@@ -128,6 +128,3 @@ Support: [support@clypseai.com](mailto:support@clypseai.com)
 
 We will respond to all inquiries within 48 hours.
 
----
-
-*This product uses the TMDB API but is not endorsed or certified by TMDB.*

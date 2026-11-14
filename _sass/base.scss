@@ -7,20 +7,20 @@ $font: $font-body;
 	--page-bg: #ededed;
 	--page-bg-soft: #e6ebff;
 	--surface: rgba(255, 255, 255, 0.76);
-	--surface-strong: #4970ef;
-	--surface-soft: rgba(73, 112, 239, 0.08);
+	--surface-strong: #4b6bef;
+	--surface-soft: rgba(75, 107, 239, 0.08);
 	--surface-light: #ffffff;
 	--text-primary: #1b2c63;
 	--text-muted: #5d6f9f;
 	--text-dark: #1b2c63;
-	--line: rgba(73, 112, 239, 0.14);
-	--line-strong: rgba(73, 112, 239, 0.28);
-	--accent: #4970ef;
+	--line: rgba(75, 107, 239, 0.14);
+	--line-strong: rgba(75, 107, 239, 0.28);
+	--accent: #4b6bef;
 	--accent-deep: #3257cb;
 	--accent-warm: #7f9cff;
 	--accent-warm-soft: rgba(127, 156, 255, 0.16);
-	--shadow-lg: 0 32px 80px rgba(73, 112, 239, 0.18);
-	--shadow-md: 0 18px 40px rgba(73, 112, 239, 0.12);
+	--shadow-lg: 0 32px 80px rgba(75, 107, 239, 0.18);
+	--shadow-md: 0 18px 40px rgba(75, 107, 239, 0.12);
 	--radius-xl: 3.2rem;
 	--radius-lg: 2.4rem;
 	--radius-md: 1.8rem;
@@ -40,8 +40,8 @@ body {
 	line-height: 1.6;
 	color: var(--text-primary);
 	background:
-		radial-gradient(circle at top left, rgba(73, 112, 239, 0.16), transparent 28%),
-		radial-gradient(circle at 80% 10%, rgba(73, 112, 239, 0.1), transparent 24%),
+		radial-gradient(circle at top left, rgba(75, 107, 239, 0.16), transparent 28%),
+		radial-gradient(circle at 80% 10%, rgba(75, 107, 239, 0.1), transparent 24%),
 		linear-gradient(180deg, #f2f4ff 0%, #ededed 34%, #e8ebf7 100%);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -50,7 +50,7 @@ body {
 .subPageBody {
 	color: var(--text-dark);
 	background:
-		radial-gradient(circle at top right, rgba(73, 112, 239, 0.1), transparent 18%),
+		radial-gradient(circle at top right, rgba(75, 107, 239, 0.1), transparent 18%),
 		linear-gradient(180deg, #f5f6fb 0%, #ededed 100%);
 }
 
@@ -97,7 +97,7 @@ img {
 code {
 	padding: 0.2rem 0.6rem;
 	border-radius: 999px;
-	background: rgba(73, 112, 239, 0.08);
+	background: rgba(75, 107, 239, 0.08);
 	font-size: 0.9em;
 }
 
@@ -121,7 +121,7 @@ select {
 }
 
 ::selection {
-	background: rgba(73, 112, 239, 0.22);
+	background: rgba(75, 107, 239, 0.22);
 	color: #0f1d4f;
 }
 
