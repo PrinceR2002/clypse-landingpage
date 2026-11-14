@@ -37,7 +37,6 @@
 	<link rel="preload" as="image" href="{{ site.site_icon | relative_url }}" fetchpriority="high">
 	{% if page.url == '/' %}
 		<link rel="preload" as="image" href="{{ site.hero_image | relative_url }}" fetchpriority="high">
-		<link rel="prefetch" as="image" href="{{ site.showcase_image | relative_url }}">
 	{% endif %}
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,8 +57,7 @@
 		(function () {
 			var warm = [
 				{{ site.site_icon | relative_url | jsonify }}{% if page.url == '/' %},
-				{{ site.hero_image | relative_url | jsonify }},
-				{{ site.showcase_image | relative_url | jsonify }}{% endif %}
+				{{ site.hero_image | relative_url | jsonify }}{% endif %}
 			];
 
 			function preload() {

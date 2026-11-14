@@ -209,10 +209,6 @@ body {
 		background: linear-gradient(90deg, transparent, rgba(122, 140, 255, 0.2), transparent);
 	}
 
-	.showcase-shot {
-		background: #16161f;
-		box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
-	}
 
 	// Sub pages (What's New, Privacy, Terms)
 	.page {
@@ -523,11 +519,6 @@ body {
 		margin-top: 1.2rem;
 	}
 
-	.showcase-shot {
-		max-width: 18rem;
-		margin-top: 2rem;
-		border-radius: 2.4rem;
-	}
 
 	.showcase-stack {
 		gap: 1rem;
@@ -648,37 +639,11 @@ body {
 	}
 }
 
-// The in-app screenshot is presented as a phone instead of a floating box.
-.showcase-shot {
-	max-width: 24rem;
-	margin: 3rem auto 0;
-	padding: 0.7rem;
-	border-radius: 3.8rem;
-	background: #0b0b0f;
-	box-shadow:
-		0 0 0 1px rgba(255, 255, 255, 0.06) inset,
-		0 0 0 1px rgba(75, 107, 239, 0.18),
-		0 30px 60px rgba(27, 44, 99, 0.25);
-	// border-radius also rounds the screenshot inside the padding (the "bezel").
-}
 
-@media (prefers-color-scheme: dark) {
-	.showcase-shot {
-		background: #000;
-		box-shadow:
-			0 0 0 1px rgba(255, 255, 255, 0.12),
-			0 30px 60px rgba(0, 0, 0, 0.6);
-	}
-}
 
 @media only screen and (max-width: 700px) {
 	.modes-grid {
 		grid-template-columns: none;
 	}
 
-	.showcase-shot {
-		max-width: 19rem;
-		margin-top: 2.2rem;
-		border-radius: 3rem;
-	}
 }
