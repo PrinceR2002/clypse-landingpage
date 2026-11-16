@@ -5,7 +5,7 @@ include_in_header: false
 ---
 
 **Last updated**  
-November 11, 2026
+November 15, 2026
 
 # Privacy Policy
 
@@ -39,6 +39,10 @@ Clypse creates a random identifier for your device. It isn't your advertising id
 - Title requests store the title you enter.
 - Puzzle requests store what you enter, including the name and email address you provide, so we can follow up.
 
+## Scene Counts
+
+When Clypse identifies a moment in a title, we record that your device Clypsed that scene (about a 15-second stretch of the movie or episode). Your device is stored only as a one-way hash, and each device counts once per scene per day. A "Clypsed N times" count appears only once at least 5 different devices have Clypsed the same scene, and it never shows who they were.
+
 ## Clypse Games
 
 We store your puzzle attempts, guesses, scores, streaks and archive history so your progress and statistics work. They're linked to your device, or to your account while you're signed in.
@@ -50,8 +54,8 @@ We store your puzzle attempts, guesses, scores, streaks and archive history so y
   - Apple's identifier for your account
   - which of your devices are signed in, recorded as one-way hashes of their identifiers
 - We don't ask Apple for your name or email. Accounts created before November 11, 2026 may also hold the name and email shared then; deleting your account removes them.
-- While you're signed in, your saved clips (including the matched transcript) and saved quotes are stored on our servers so they sync to your other devices. Free accounts back up 50 clips and 50 quotes; Clypse+ backs up 2,000.
-- Deleting a clip or quote removes its content from our servers on the next sync.
+- While you're signed in, your saved clips (including the matched transcript), saved quotes, and the titles you mark watched (with any star ratings you give them) are stored on our servers so they sync to your other devices. Free accounts back up 50 clips and 50 quotes; Clypse+ backs up 2,000. Every account backs up up to 2,000 watched titles. Your ratings are private: no one else can see them.
+- Deleting a clip or quote, or unmarking a title as watched, removes its content from our servers on the next sync.
 - Signing out stops syncing, and you choose whether to keep a copy on that phone.
 
 ## Purchases
@@ -61,7 +65,8 @@ Purchases are made through Apple. We never see your payment details. To give you
 ## Sharing and Usage Events
 
 - When you share a result, we create a link containing the title, artwork and matched quote. Anyone with the link can view it until it expires after 30 days.
-- When you open a where-to-watch link, we record which service and title you chose, to understand which links are useful.
+- When you open a where-to-watch link or open a movie in Letterboxd, we record which service or title you chose, to understand which links are useful.
+- Opening a movie in Letterboxd takes you to Letterboxd's app or website, the same as following any link. Letterboxd's own privacy policy applies there.
 
 ## Technical Information
 
@@ -84,7 +89,7 @@ We may also disclose information if the law requires it.
 
 - **Audio**: deleted right after it's transcribed.
 - **Account details, synced library and purchases**: until you delete your account.
-- **Recognition records, feedback, game progress and usage events**: kept to run and improve Clypse until you ask us to delete them.
+- **Recognition records, scene counts, feedback, game progress and usage events**: kept to run and improve Clypse until you ask us to delete them.
 - **Share links**: they stop working after 30 days.
 - **Deep Search daily-limit records**: 2 days.
 
@@ -99,7 +104,7 @@ You can delete your account at any time from the account screen. This removes:
 It also revokes Clypse's access to your Apple ID. Two things stay:
 
 - To stop free Deep Search allowances being reset by deleting and re-creating an account, we keep a one-way hash of your Apple sign-in identifier with your current allowance usage until that period resets.
-- Records linked to your device identifier rather than your account (recognitions, feedback, games played while signed out) stay unless you ask us to delete them.
+- Records linked to your device identifier rather than your account (recognitions, scene counts, feedback, games played while signed out) stay unless you ask us to delete them.
 
 ## Your Choices and Rights
 
