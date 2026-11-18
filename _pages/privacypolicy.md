@@ -5,7 +5,7 @@ include_in_header: false
 ---
 
 **Last updated**  
-November 15, 2026
+November 17, 2026
 
 # Privacy Policy
 
@@ -54,8 +54,8 @@ We store your puzzle attempts, guesses, scores, streaks and archive history so y
   - Apple's identifier for your account
   - which of your devices are signed in, recorded as one-way hashes of their identifiers
 - We don't ask Apple for your name or email. Accounts created before November 11, 2026 may also hold the name and email shared then; deleting your account removes them.
-- While you're signed in, your saved clips (including the matched transcript), saved quotes, and the titles you mark watched (with any star ratings you give them) are stored on our servers so they sync to your other devices. Free accounts back up 50 clips and 50 quotes; Clypse+ backs up 2,000. Every account backs up up to 2,000 watched titles. Your ratings are private: no one else can see them.
-- Deleting a clip or quote, or unmarking a title as watched, removes its content from our servers on the next sync.
+- While you're signed in, your saved clips (including the matched transcript), saved quotes, the titles you mark watched (with any star ratings you give them), and the titles on your watchlist (with where you added each one from) are stored on our servers so they sync to your other devices. Free accounts back up 50 clips and 50 quotes; Clypse+ backs up 2,000. Every account backs up up to 2,000 watched titles and 2,000 watchlist titles. Your ratings are private: no one else can see them.
+- Deleting a clip or quote, unmarking a title as watched, or removing a title from your watchlist removes its content from our servers on the next sync.
 - Signing out stops syncing, and you choose whether to keep a copy on that phone.
 
 ## Purchases
